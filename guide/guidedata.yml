@@ -1,8 +1,6 @@
 ---
 - name: Guide Data ush
   hosts: localhost
-   src: localhost
-   dest: 192.168.1.148
 
   user: todd
   tasks:
@@ -11,5 +9,5 @@
 
      - name: Copy XMLTV File
        synchronize:
-       src: /home/todd/xmltv.xml
+       src: localhost:/home/todd/xmltv.xml
        dest: rsync://192.168.1.148/srv/samba/IPTV/EPG/xmltv.xml
