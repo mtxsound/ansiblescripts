@@ -6,7 +6,7 @@
      - name: Run mc2xml
        shell: /home/todd/mc2xml
 
-       - name: Copy XMLTV File
-          synchronize:
-            src: /home/todd/xmltv.xml
-            dest: rsync://192.168.1.148/srv/samba/IPTV/EPG/xmltv.xml
+     - name: Copy XMLTV File
+       synchronize:
+       src: /home/todd/xmltv.xml
+       dest: rsync://192.168.1.148/srv/samba/IPTV/EPG/xmltv.xml
