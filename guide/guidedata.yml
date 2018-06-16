@@ -2,7 +2,6 @@
 - name: Guide Data ush
   hosts: 192.168.1.148
   user: todd
-  sudo: yes
   tasks:
      - name: Run mc2xml
        shell: /srv/samba/IPTV/EPG/mc2xml
