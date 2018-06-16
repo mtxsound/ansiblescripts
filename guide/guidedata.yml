@@ -4,7 +4,7 @@
   user: todd
   tasks:
      - name: Run mc2xml
-       shell: /home/todd/mc2xml
+       shell: /home/todd/./mc2xml
 
      - name: Copy XMLTV File
        synchronize:
