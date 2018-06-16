@@ -1,10 +1,13 @@
 ---
 - name: Guide Data ush
   hosts: localhost
+   src: localhost
+   dest: 192.168.1.148
+
   user: todd
   tasks:
      - name: Run mc2xml
-       shell: /home/todd/./mc2xml -T mtxsound:todd1328
+       shell: /home/todd/./runEPG
 
      - name: Copy XMLTV File
        synchronize:
