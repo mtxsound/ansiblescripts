@@ -1,0 +1,9 @@
+---
+- name: RSYNC Guide
+  hosts: 192.168.1.149, 192.168.1.199
+
+  user: todd
+  tasks:
+     - name: RSYNC EPG
+       shell: rsync xmltv.xml todd@192.168.1.148:/srv/samba/IPTV/EPG/xmltv.xml
+       tags: rsync_epg
