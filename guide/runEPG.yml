@@ -1,6 +1,6 @@
 ---
 - name: Guide Data Push
-  hosts: all
+  hosts: localhost
 
   user: todd
   tasks:
