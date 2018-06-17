@@ -1,6 +1,6 @@
 ---
 - name: Guide Data Push
-  hosts: '{{ host }}'
+  hosts: all
 
   user: todd
   tasks:
