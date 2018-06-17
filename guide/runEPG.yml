@@ -1,6 +1,6 @@
 ---
 - name: Guide Data Push
-  hosts: localhost
+  hosts: 192.168.1.199
 
   user: todd
   tasks:
