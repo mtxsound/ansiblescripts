@@ -1,0 +1,26 @@
+---
+- name: RSYNC Guide
+  hosts: 192.168.1.148, 192.168.1.199
+
+  user: todd
+  sudo: yes
+  tasks:
+     - name: Apt-Get Update
+       shell: sudo apt-get -y update
+       tags: apt-update
+
+     - name: Apt-Get Upgrade
+       shell: sudo apt-get -y upgrade
+       tags: apt-upgrade
+
+     - name: Apt-Get Dist Upgrade
+       shell: sudo apt-get -y dist-upgrade
+       tags: apt-dist-upgrade
+
+     - name: Apt-Get Auto Remove
+       shell: sudo apt-get -y autoremove
+       tags: apt-autoremove
+
+     - name: Apt-Get Auto Clean
+       shell: sudo apt-get -y autoclean
+       tags: apt-autoclean
